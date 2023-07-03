@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'video/style.css' %}">
+
+
+<div class="block-center">
+    <div>
+        <video src="{{video.files.url}}" poster="{{video.thumbnail_image.url}}" controls></video>
+    </div>
+    <h1>{{video.title}}</h1>
+    <h3>{{video.upload_date}}</h3>
+    <p>{{video.description}}</p>
+    <a href="{% url 'video:index' %}">一覧に戻る</a>
+</div>
+
+{% endblock %}

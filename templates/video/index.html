@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'video/style.css' %}">
+
+
+<h1>video index</h1>
+<div class="contents">
+{% for video in videos %}
+    <div class="video-content-box">
+        <a href="{% url 'video:detail' video.id %}">
+            <div>
+                <div class="thumbnail_image">
+                    <img src="{{video.thumbnail_image.url}}">
+                </div>
+                <div class="text-box">
+                    <h2>{{video.title}}</h2>
+                    <p>{{video.description}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
+
+{% endblock %}

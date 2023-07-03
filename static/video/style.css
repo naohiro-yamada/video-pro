@@ -1,0 +1,55 @@
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.video-content-box {
+    width: 30%;
+    /* border: 10px solid blue; */
+    margin-bottom: 30px;
+}
+
+
+
+.text-box {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.text-box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-box h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.thumbnail_image {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.thumbnail_image img {
+    width: 100%;
+    display: block;
+}
+
+.block-center {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.block-center video {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
